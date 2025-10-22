@@ -71,7 +71,8 @@ if(isset($_POST['signin_button'])){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bigbrew Tarcan</title>
+    <link rel="icon" type="image/x-icon" href="./pictures/logo white.png">
     <link rel="stylesheet" href="./login1.css">
     <script>
      // Prevent the user from going back to the previous page after logging out

@@ -9,7 +9,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bigbrew Tarcan</title>
+    <link rel="icon" type="image/x-icon" href="./pictures/logo white.png">
     <link rel="stylesheet" href = "./about.css">
 </head>
 <script>
