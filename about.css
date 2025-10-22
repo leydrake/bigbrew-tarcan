@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moul&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+.content-container{
+    width: 80%;
+    height: auto;
+    /* border: 1px solid black; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+}
+.header-container{
+    position: relative;
+    margin-top: 50px;
+    height: 600px;
+    border: 1px solid black;
+
+}
+.header-container> img{ 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    object-fit: cover;
+    transform: translateX(-50%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* border: 1px solid pink; */
+    
+    
+}
+
+.text-holder{
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    height: 80%;
+    width: 40%;
+    
+}
+.text-holder p{
+    font-weight: bold;
+    font-family: "Moul", serif;
+    color: #fffaeb;
+    text-shadow: 6px 5px 0px rgba(188,110,25,0.83);
+    text-align: justify;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+}
+.text-holder button{
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-family: "Montserrat";  
+    border: none; 
+}
+
+/* company section */
+.company-section{
+    /* border: 1px solid black; */
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin-top: 150px;
+    height: 800px;
+}
+.company-image{
+    margin-right: 50px;
+    height: 100%;
+    float: left;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    object-fit: cover;
+    background: rgb(188,110,25);
+    background: linear-gradient(180deg, rgba(188,110,25,0.7847514005602241) 0%, rgba(255,250,235,0.865983893557423) 50%, rgba(188,109,25,0.7931547619047619) 100%);
+}
+.company-section > p{
+    text-align: justify;
+    text-indent: 2.5cm;
+    font-size: 20px;
+    color: #512c1d;
+    margin: 30px 50px 0px 50px;
+    
+}
+.company-section > h1{
+    
+    color: #bc6e19;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 50px 0px 50px 0px;
+    padding-top: 50px;
+    
+}
+.opacity2{
+    position: absolute;
+    left: 55%;
+    margin-top: 20px;
+    height: 250px;
+    width: 550px;
+    opacity: .5;
+    z-index: -100;
+    background: rgb(188,110,25);
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    
+}
+.franchise{
+    position: relative;
+    left: 26%;
+    height: 150px;
+    width: 500px;
+    
+}
+.franchise img {
+    
+    margin-top: 50px;
+    position: absolute;
+    left: 0;
+    clip-path: circle(-50%);
+    transform: scale(.7);
+    float: left;
+}
+.franchise p{
+    margin-top: 20px;
+    font-family: "Montserrat";
+    position: absolute;
+    left: 33%;
+    top: 35%;
+    display: inline;
+    color: black;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.company-section button{
+    color: #fffaeb;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 20px 45px;
+    cursor: pointer;
+    border: none;
+    background-color: #d67d1c;
+    transition: all .3s ease;
+}
+.company-section button:hover{
+    transition: all .3s ease;
+    background-color: #d67d1c;
+    opacity: .5;
+    
+}
+
+/* milktea */
+.milktea-section{
+    /* border: 1px solid black; */
+    width: 90%;
+    height: auto;
+    margin-top: 150px;
+    height: 800px;
+}
+.milktea-image{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    height: auto;
+    float: right;
+    width: 50%;
+    margin-left: 50px;
+    object-fit: contain;
+   
+}
+.milktea-section> p{
+    text-align: justify;
+    text-indent: 2.5cm;
+    font-size: 20px;
+    color: #512c1d;
+    margin: 50px;
+    
+}
+.milktea-section > h1{
+    color: #bc6e19;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 50px 0px 50px 0px;
+    padding-top: 100px;
+
+}
+
+.multi-pictures{
+    position: relative;
+   background-color: #d67d1c;
+    margin-top: 100px;
+    width: 140%;
+    height: 450px;
+    left: -20%;
+
+    background: rgb(188,109,25);
+    background: linear-gradient(180deg, rgba(188,109,25,0.9528186274509804) 0%, rgba(188,109,25,0.8715861344537815) 50%, rgba(255,250,235,1) 100%);
+}
+.multi-pictures > img{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    filter: brightness(1.1) saturate(1.2);
+    position: relative;
+    width: 26%;
+    position: absolute;
+}
+.multi-pictures > img:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+.multi1{
+    left: 10%;
+    top: 50px;
+}
+.multi2{
+    left: 37.5%;
+    top: 25px;
+}
+.multi3{
+    left: 65%;
+    top: 50px;
+}

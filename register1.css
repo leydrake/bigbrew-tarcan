@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat";
+}
+
+.register-container{
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 50px;
+    transform: translate(-50%,-50%);
+    border-radius: 10px;
+    width: 30%;
+    height: 550px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.data{
+    height: 50px;
+    width: 80%;
+    margin: 40px auto;
+}
+/* input */
+.data input{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    
+    border-radius: 5px;
+    border: 1.5px solid #ccc;
+}
+.double-text{
+    width: 40%;
+    display: inline-block;
+    margin-bottom: 0px;
+    
+}
+.phone::-webkit-outer-spin-button,.phone::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+/* button container */
+.button-container{
+    margin: 30px 0px;
+    height: 50px;
+}
+
+.signup-button{
+    height: 100%;
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.signup-button{
+    background-color: #bc6e19;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition: all .3s ease;
+    border: 2px solid #bc6e19;
+}
+.signup-button:hover{
+    transition: all .3s ease;
+    color:black;
+    background-color: white;
+    border: 2px solid #bc6e19;
+}
+.eye-flex{
+    position: relative;
+    display: inline-flex;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: -20px;
+
+}
+.eye-flex > img{
+    position: absolute;
+    height: 20px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.icons{
+    position: relative;
+    display: inline-flex;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 20px;
+}
+.icons > img{
+    position: absolute;
+    height: 20px;
+    right: 10px;
+}
+
+.back-button{
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+   
+}
+   
+.back-button > input{
+    padding: 9px 24px;
+    cursor: pointer;
+}
+   
+

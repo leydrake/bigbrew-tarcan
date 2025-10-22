@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    overflow-x: hidden;
+}
+.content-container{
+    width: 80%;
+    height: auto;
+    /* border: 1px solid black; */
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+
+}
+.content-container img{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.slider-wrapper{
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+ 
+    overflow: hidden;
+    object-fit: contain;
+ 
+    
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;  
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth !important;
+    box-shadow: 0 1.5 rem 3rem -0.75rem hsla(0, 0%, 0%,0.25);
+    border-radius: 0.5rem;
+    overflow-x: hidden;
+   
+}
+
+.slider img{
+    width: 100%;
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1.5rem;
+    position: absolute;
+    bottom: 2.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    
+}
+.slider-nav a{
+    height: 1.1rem;
+    width: 1.1rem;
+    border-radius: 50%;
+    background-color: black;
+    opacity: .75;
+    transition: opacity ease 250ms;
+    margin-top:-160px ;
+
+}
+
+.opacity{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background-color: black;
+    opacity: .2;
+    transform: translate(-50%,-50%);
+    height: 80%;
+    width: 80%;
+}
+.text-holder{
+    z-index: 100;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 80%;
+    width: 80%;
+    
+}
+.text-holder p,h1{
+    font-family: "Montserrat";
+    color: white;
+    text-align: justify;
+    padding: 30px;
+}
+.text-holder p{
+    text-indent: 1cm;
+    font-size: 20px;
+}
+.text-holder button{
+    /* border: 1px solid black; */
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-family: "Montserrat";  
+    border: none; 
+}
+
+/* coffee section */
+.coffee-section{
+    /* border: 1px solid black; */
+    width: 90%;
+    height: auto;
+    height: 800px;
+    margin-top: -80px;
+}
+.coffee-image{
+    margin-right: 50px;
+    height: 90%;
+    float: left;
+    width: 45%;
+    box-shadow: -20px 20px 0px 1px #bc6e19 !important;
+
+}
+/* BORDER NA HALF */
+.half-border{
+    position: absolute;
+    background-color: #f4f4f4;
+    left: 31.8%;
+    margin-top: -20px;
+    z-index: -1;
+    width: 300px;
+    height: 200px;
+
+}
+.coffee-section > p{
+    
+    text-align: justify;
+    text-indent: 2.5cm;
+    font-size: 20px;
+    color: #512c1d;
+    margin: 50px;
+    
+}
+.coffee-section > h1{
+    text-align: center;
+    color: #bc6e19;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 50px 0px 50px 0px;
+    padding-top: 100px;
+
+    font-family: "Sheeny";
+}
+@font-face {
+    font-family: Sheeny;
+    src: url(./Heavitas.ttf);
+}
+
+/* milktea */
+
+.milktea-section{
+    /* border: 1px solid black; */
+    width: 90%;
+    height: auto;
+    margin-top: 150px;
+    height: 800px;
+}
+.milktea-image{
+    height: 90%;
+    float: right;
+    width: 45%;
+    margin-left: 50px;
+    box-shadow:20px 20px 0px 1px #bc6e19  !important ;
+
+   
+}
+
+/* BORDER NA HALF */
+.half-border2{
+    position: absolute;
+    background-color: #f4f4f4;
+    right: 31.9%;
+    margin-top: -20px;
+    z-index: -1;
+    width: 300px;
+    height: 200px;
+
+}
+.milktea-section> p{
+    text-align: justify;
+    text-indent: 2.5cm;
+    font-size: 20px;
+    color: #512c1d;
+    margin: 50px;
+    
+}
+.milktea-section > h1{
+    text-align: center;
+    color: #bc6e19;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 50px 0px 50px 0px;
+    padding-top: 110px;
+    font-family: "Sheeny";
+
+
+}
+
+.multi-pictures{
+   background-color: #fffaeb;
+    margin-top: 100px;
+    left: -20%;
+    width: 140%;
+    height: 550px;
+    background: rgba(188,109,25,.7);
+    /* background: rgb(188,109,25);
+    background: linear-gradient(180deg, rgba(188,109,25,0.9528186274509804) 0%, rgba(188,109,25,0.8715861344537815) 50%, rgba(255,250,235,1) 100%); */
+    background-image: url(./pictures/filinger111.png);
+
+    position: relative;
+   
+}
+.multi-pictures > img{
+   
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.multi-pictures > img{
+    position: absolute;
+    border: 15px solid #fff;
+}
+.multi-pic1{
+    left: 6%;
+    height: 60%;
+    top: 30%;
+}
+.multi-pic2{
+    left:21.5%;
+    height: 60%;
+    top: 20%;
+}
+.multi-pic3{
+    left: 37%;
+    height: 70%;
+    top: 10%;
+}
+.multi-pic4{
+    right: 21.5%;
+    height: 60%;
+    top: 20%;
+}
+.multi-pic5{
+    right: 6%;
+    height: 60%;
+    top: 30%;
+}
+/* .multi-pic6{
+    left: 75.5%;
+    height: 70%;
+    bottom: 5%;
+} */
+.multi-pictures > img:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}

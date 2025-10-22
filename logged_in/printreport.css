@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap');
+*{
+  font-family: "Montserrat";
+}
+.title-header{
+  text-align: center;
+  margin: 100px;
+  color: #bc6e19;
+  font-size: 40px;
+  
+}
+.cart-icon{
+    width: 50px;
+    height: 40px;
+    margin-top: 10px;
+   cursor: pointer;
+}
+.report-container {
+    display: flex;
+    width: 70%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 300px;
+    justify-content:space-evenly;
+}
+
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.form-group select {
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.form-group select:hover,
+.form-group select:focus {
+    border-color: #C683D7;
+    background-color: #fff;
+}
+
+
+.generate-report-button,
+.preview-report-button {
+display: inline-block;
+margin-right: 12px; /* Adjust the margin as needed */
+position: absolute;
+
+right: 330px;
+top: 450px;
+
+}
+.generate-report-button button{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.generate-report-button button,
+.preview-report-button button {
+    border: none;
+    width: 230px;
+    cursor: pointer;
+    padding: 15px;
+    border: 3px solid #d38e40;
+    background-color: #d38e40;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+}
+
+.generate-report-button button:hover,
+.preview-report-button button:hover {
+    border: 3px solid #d38e40;
+    background-color: white;
+    color: #bc6e19;
+    transition: all 0.3s ease;
+
+}
+
+#fic {
+    width: 200px;
+    height: 150px;
+    margin-left: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+/* Arrow Link to Homepage */
+a {
+    position: absolute;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+/* Navigation Bar */
+.navigationbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo {
+    width: 350px;
+    height: 70px;
+    margin: 40px 0 0 140px;
+}
+
+/* Dropdown Styles */
+select {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+}
+
+select:hover,
+select:focus {
+    border-color: #2980b9;
+    background-color: #f2f2f2;
+    color: #000;
+    outline: none;
+}
+
+/* Styling the Options */
+option {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Hover and Focus Effect on Options */
+option:hover,
+option:focus {
+    background-color: #3498db;
+    color: #fff;
+}
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .card {
+    margin: 0;
+    position: relative;
+    width: 200px;
+    height: 80px;
+    background: #fff;
+    border-radius: 10px;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1), -1px -1px 10px rgba(255, 255, 255, 0.7);
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    appearance: none;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    margin-left: -3px;
+    margin-top: -3px;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  
+  .input + .check::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #d0d0d0;
+    border-radius: 50%;
+    background-color: #e8e8e8;
+  }
+  
+  .input:checked + .check::after {
+    content: '';
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 12px;
+    height: 12px;
+    background-color: #d38e40;
+    border-radius: 50%;
+  }
+  
+  .input:checked {
+    border: 2px solid #d38e40;
+  }
+  
+  .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 15px;
+    font-family: Arial, sans-serif;
+    color: #323232;
+  }
+  
+  .label .title {
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  
+  #dateDiv{
+    margin-bottom: -200px;
+  }

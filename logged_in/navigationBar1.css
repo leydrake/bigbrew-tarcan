@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+/* Basic Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f4f4;
+    
+}
+header{
+  position: relative;
+  z-index: 1000; /* To ensure it's above other elements */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: #bc6e19;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    max-height: 150px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 100px;
+    width: auto;
+    transition: all .3s ease ;
+    transition: opacity 0.6s ease, transform 0.3s ease; 
+   
+}
+
+.logo h1 {
+    font-size: 32px;
+    color: #fffaeb; 
+    transition: all .3s ease;
+    padding: 23px 23px 23px 0px;   
+    font-weight: 800;
+}
+.logo h1:hover{
+    transition: all .3s ease ;
+    color: #333;
+}
+
+
+nav {
+    flex-grow: 1;
+    text-align: center;
+    
+}
+
+.nav_links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_links li {
+    position: relative;
+}
+
+.nav_links li a {
+    text-decoration: none;
+    color: #fffaeb;
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-bottom: 3px; 
+    transition: color 0.3s ease, letter-spacing 0.3s ease;
+    position: relative;
+    
+}
+
+.nav_links li a:hover,
+.nav_links li a:focus {
+    color: #bc6e19;
+    letter-spacing: 2px;
+    color: #333;
+}
+
+/* Underline effect */
+.nav_links li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #bc6e19;
+    transition: width 0.3s ease;
+    
+}
+
+.nav_links li a:hover::after {
+    width: 100%; /* Expands underline on hover */
+    
+}
+
+/* CART */
+.cart-icon {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 60px;
+  text-align: center;
+  border-radius: 10px;
+  filter: contrast(0) brightness(2);
+
+}
+
+
+.cart-icon img {
+  width: 50px;
+  height: 40px;
+
+}
+.cart-icon p{
+  text-decoration: none;
+  position: absolute;
+  font-size: 22px;
+  font-weight: 500;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -15px;
+}
+
+/* Button Styles */
+header > button {
+    padding: 10px 25px;
+    background-color: #fffaeb;
+    color: #bc6e19;
+    border: 2px solid #bc6e19;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 10px; 
+    transition: all 0.3s ease;
+    
+}
+
+header > button .user-icon {
+    width: 20px; /* Set the icon size */
+    height: 20px;
+    border: none !important;
+}
+
+header > button .user-profile{
+  position:absolute;
+  width: 50px; /* Set the icon size */
+  height: 50px;
+  clip-path: circle(50%);
+  margin-left: -60px;
+}
+
+
+header > button:hover {
+    background-color: #bc6e19;
+    color: #fffaeb;
+
+}
+
+
+
+
+/* Sliding profile */
+.profile-image-container{
+  position: relative;
+  border-radius: 50%;
+  left: 50px;
+  width: 250px;
+  height: 250px;
+  border:8px solid #dcdcdc ;
+  margin-bottom: 30px;
+  
+}
+.profile-image-container img{
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  /* border:8px solid #dcdcdc; */
+  padding: 0;
+  object-fit: cover;
+  margin: 0;
+}
+.profile-container .right-round{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #00bf44;
+  height: 40px;
+  width: 40px;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden; 
+  cursor: pointer;
+}
+.camera{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 32px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+}
+.profile-container .left-round{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: red;
+  height: 40px;
+  width: 40px;
+  line-height: 33px;
+  text-align: center;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+.cancel{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 32px;
+  transform: translate(-50%, -50%);
+}
+.profile-container .file ,.checked_button{
+  transform: scale(2);
+  opacity: 0;
+  
+}
+.profile-container input::-webkit-file-upload-button, .upload input[type=submit]{
+  cursor: pointer;
+}
+.profile-container #checked_button{
+  transform: scale(2);
+  cursor: pointer;
+  opacity: 0;
+}
+.checked{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 32px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+}
+
+
+/* tapos na and profile picture here */
+
+/* start ng account information */
+.profile-container {
+  position: fixed;
+  right: 0;
+  top: -110vh;
+  background-color: #fff;
+  width: 700px;
+  height: 100vh;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+  transition: top 0.3s ease;
+  z-index: 1;
+  padding: 0px;
+}
+
+.profile-container.open {
+  top: 6.9vh;
+}
+
+
+.profile-container h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #6f4e37;
+}
+
+.profile-container p {
+  font-size: 16px;
+  color: #595037;
+}
+
+.profile-container .close-btn {
+  background-color: #bc6e19;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+
+
+.profile-container {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fffbf8;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  margin-top: 30px;
+}
+
+#profileForm {
+
+  display: flex;
+  flex-direction: column;
+}
+
+#profileForm label {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #6f4e37;
+  margin-bottom: 8px;
+}
+
+/* mga input text */
+#profileForm input {
+  width: 90%;
+  padding: 7px;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: -4px;
+  margin-bottom: -10px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+
+}
+#Phone::-webkit-inner-spin-button, #Phone::-webkit-outer-spin-button{
+  display: none;
+}
+.close-btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+
+.profile-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  margin-top: -10px;
+  text-align: center;
+}
+
+body{
+    overflow-x: hidden;
+}
+#update_button_submit,#update_button_hidden{
+  margin-top: 40px !important;
+  border: none !important;
+  margin-bottom: -20px !important;
+  width: 99% !important;
+}
+
+/* password banda */
+.password-container {
+  position: fixed; /* Already correct */
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fffbf8;
+  width: 500px;
+  border-radius: 10px;
+  height: 500px;
+  z-index: 9999; /* Very high z-index */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.password-container{
+  animation: popup .4s ease-in-out 0s 1 normal none;
+}
+
+@keyframes popup {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.password-container h2,
+.password-container img,
+.password-container label,
+.password-container input {
+  z-index: 1000; /* Within the parent's stacking context */
+  position: relative; /* Ensure z-index applies */
+}
+.password-container .changepass-text {
+  position: relative;
+  background-color: #bc6e19;
+  top: 0px;   
+  margin-top: -30px;
+}
+.password-container .changepass-text h2{
+  margin: 30px;   
+  padding: 20px;
+ 
+  color: #fffbf8;
+}
+
+.password-container .exit{
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  cursor: pointer;
+  filter: contrast(0%) brightness(2);
+}
+
+.password-container label{
+  font-size: 1rem;
+  color: #6f4e37;
+  margin: 5px 20px 10px 35px !important;
+
+}
+.password-container input {
+ width: 80% !important;
+border: 1px solid black  !important;
+margin: 0px 20px 10px 35px !important;
+padding: 10px !important;
+border: 2px solid #ccc !important;
+}
+.password-container .password-buttons{
+  width: 60% !important;
+  margin: 0px 0px 10px 20% !important;
+  cursor: pointer;
+}
+.eye-flex{
+  position: absolute;
+  right: 20px;
+  margin-top: 15px;
+}
+.eye-flex{
+  height: 20px;
+  width: 25px;
+  cursor: pointer;
+}
+
+/* BUTTON CONTAINER */
+.button-container{
+  position: relative;
+  margin-bottom: 0px;
+  width: 100%; 
+  
+}
+
+.close-btn{
+  top: 1vh;
+  position: relative;
+  margin-bottom: -5px;
+}
+  
+#log_pass{
+  top: -1vh;
+  position: relative;
+  padding: 10px 41% 10px 41%;
+
+  border: 3px solid #bc6e19;
+  background-color: #f4f4f4;
+  color: #bc6e19;
+  font-weight: 600;
+
+}
+
+#up_pass{
+  top: -1vh;
+  position: relative;
+  bottom: 5px;
+  padding: 10px 30% 10px 26%;
+
+  border: 3px solid #bc6e19;
+  background-color: #f4f4f4;
+  color: #bc6e19;
+  font-weight: 600;
+
+}
+
+#admin_settings{
+  position: relative;
+  bottom: 5px;
+  padding: 10px 34% 10px 29%;
+  top: -1vh;
+
+  border: 3px solid #bc6e19;
+  background-color: #f4f4f4;
+  color: #bc6e19;
+  font-weight: 600;
+
+}
+
+#update_button_submit{
+  position: relative;
+  border: none !important;
+  width: 99% !important;
+  padding: 10px 38% 10px 30% !important;
+  top: -2vh;
+  margin-bottom: -10px !important;
+  font-weight: 600;
+  border: 3px solid #bc6e19 !important;
+
+}
+
+/* HOVER */
+#update_button_submit:hover{
+  background-color: #f4f4f4;
+  color: #bc6e19;
+  border: 3px solid #bc6e19;
+
+}
+
+#log_pass:hover,#up_pass:hover,#admin_settings:hover{
+  background-color: #bc6e19;
+  color: #fffaeb;
+}
+
+  /* edit icons starts hereerer */
+.edit-icon{
+  margin-top: -20px;
+  margin-left: 310px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+

@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat";
+    text-decoration: none;
+}
+
+.text-header{
+    font-family: "Montserrat";
+    font-weight: 700;
+    text-align: center;
+    margin: 20px;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+    font-size: 48px;
+    
+}
+.login-container{
+background-color: #fff;
+    /* display: none; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    width: 500px;
+    height: 600px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.data{
+    height: 50px;
+    width: 80%;
+    margin: 40px auto;
+}
+/* input */
+.data input{
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    /* border: 1px solid lightgrey ; */
+    border-radius: 10px;
+    border: 1.5px solid #ccc;
+}
+
+/* button container */
+.button-container{
+    margin: 30px 0px;
+    height: 50px;
+}
+.signin-button{
+    height: 100%;
+    width: 80%;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    cursor: pointer;
+    margin-bottom: 0;
+   
+}
+.signin-button{
+    background-color: #bf6d1b;
+    font-size: large;
+    font-family: "Montserrat";
+    border: none;
+    border-radius: 10px;
+    color: white;
+    transition: all .3s ease;
+    border: 2px solid #bf6d1b;
+}
+.signin-button:hover{
+    transition: all .3s ease;
+    color: black;
+    background-color: white;
+    border: 2px solid #bf6d1b;
+}
+.register-container{
+   
+    margin-left: 10%;
+    text-decoration: none;
+    margin-top: 80px;
+ 
+}
+.register-container > a{
+    cursor: pointer;
+   font-size: 20px;
+}
+.register-container > a > span{
+    color: #bf6d1b;
+    font-weight: 500;
+}
+.register-container > a:hover{
+    transition: all .3s ease;
+    
+}
+.forgot-container{
+    margin-top: -50px;
+    
+}
+.forgot-container > a{
+    text-decoration: underline;
+    font-size: 19px;
+    font-weight: 500;
+    transition: all .3s ease;
+}
+.forgot-container > a:hover{
+    transition: all .3s ease;
+    color: #bc6e19;
+}
+.eye-flex{
+    position: relative;
+    display: flex;
+   align-items: center;
+}
+.eye-flex > img{
+    position: absolute;
+    height: 20px;
+    right: 10px;
+    cursor: pointer;
+}
+
